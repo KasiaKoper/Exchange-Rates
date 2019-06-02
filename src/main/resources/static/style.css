@@ -1,5 +1,10 @@
 p.article{
     color: red;
+    background-color: cornflowerblue;
+}
+
+p.yellow{
+    background-color: yellow;
 }
 
 p{

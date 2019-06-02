@@ -17,5 +17,11 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/nbp")
+    public String getNbp(ModelMap modelMap){
+        modelMap.put("currencies",Arrays.asList("eur","usd"));
+        return "nbp";
+    }
+
 
 }
