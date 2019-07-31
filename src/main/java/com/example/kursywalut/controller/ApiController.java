@@ -23,7 +23,7 @@ public class ApiController {
     @Autowired
     private CurrencyService currencyService;
 
-    //  localhost8080/api/exchangerate/usd
+    //  localhost8080/api/exchangerates/usd
 
     @GetMapping("/exchangerates/{code}")
     public Currency index(@PathVariable String code){
