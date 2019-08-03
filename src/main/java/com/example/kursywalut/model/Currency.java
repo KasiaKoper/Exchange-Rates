@@ -15,6 +15,4 @@ public class Currency {
     private String code;
     private List<Rate> rates=new ArrayList<>();
 
-
-
 }

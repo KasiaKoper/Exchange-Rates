@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Amount in EUR:</h1>
+<!-- weather.gettemperatureModel().getTemperature() -->
+<p th:text="${weather.temperatureModel.getTemperatureDescription()}"/>
+<br><br/>
+<h3> Ciśnienie to: </h3>
+
+<p th:text="${weather.temperatureModel.pressure}"/>
+
+<a href ="/"> Cofnij</a>
+
+
+
+</body>
+</html>

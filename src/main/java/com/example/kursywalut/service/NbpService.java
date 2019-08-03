@@ -15,4 +15,10 @@ public class NbpService implements CurrencyService {
          return new RestTemplate().getForObject(apiPath,Currency.class);     //zamienia jsona na obiekty wskazanej klasy
 
     }
+
+    public Double result(String currency, Double amount){
+//        return amount/currency.rates;
+        return 0.00;
+    }
+
 }
