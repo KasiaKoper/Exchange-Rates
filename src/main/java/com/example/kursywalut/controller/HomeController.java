@@ -23,5 +23,11 @@ public class HomeController {
         return "nbp";
     }
 
+    @GetMapping("/calculator")
+    public String calculate(ModelMap modelMap){
+        modelMap.put("currencies",Arrays.asList("eur","usd"));
+        return "calculator";
+    }
+
 
 }
