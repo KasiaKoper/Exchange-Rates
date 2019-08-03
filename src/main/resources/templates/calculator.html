@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
@@ -7,8 +7,23 @@
 <body>
 
 <form action="/calculator">
-    <label> Input amount to be exchanged</label>
+    <label> Input amount in PLN to be exchanged:</label>
     <input type="number" name="amount">
+    <!--<label> Choose currency:</label>-->
+    <!--&lt;!&ndash;<input type="text" name="currency">&ndash;&gt;-->
+    <br><br/>
+    <div class="form-group">
+        <label> Choose currency:</label>
+        <select th:field="*{currencies}" class="form-control input-small"/>
+        <div>
+            <option value=0> -- </option>
+            <option th:value="usd" th:text="USD"></option>
+            <option th:value="eur" th:text="EUR"></option>
+        </div>
+        </select>
+    </div>
+
+    <br>
     <input type="submit" value="Convert">        <!--przycisk-->
 </form>
 
